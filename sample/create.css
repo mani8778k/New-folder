@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+
+.head {
+
+    display: flex;
+    text-align: center;
+    background-color: tomato;
+    justify-content: space-between ;
+    padding: 40px ;
+
+}
+
+.head h3 {
+
+    text-transform: capitalize;
+    letter-spacing: 1px ;
+    font-size: 20px ;
+    font-weight: 600;
+    color : rgb(229, 221, 221);
+    padding: 0px ;
+    text-align: center;
+}
+
+.head div a {
+
+    margin-left: 20px ;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 14px ;
+    color: rgb(0, 7, 7);
+    font-weight: 600;
+    padding: 2px ;
+    text-align: center;
+
+}
+
+.head div a:hover , .head div a:active {
+
+    border-bottom: 2px solid orange ;
+}
+
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 500px ;
+    background-image: url("image/button.jpg");
+    background-size: cover ;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+.container div {
+
+    position: absolute;
+
+    
+ 
+}
+
+.container div:not(.active) {
+
+    display: none;
+}
+
+
+.container .home {
+
+    width: 600px ;
+    display: flex;
+    flex-direction: column;
+    gap: 20px ;
+    text-align: justify;
+    padding: 20px ;
+    justify-content: center;
+    height: 400px ;
+ 
+
+}
+
+
+.home h3 {
+
+    text-transform: uppercase;
+    font-size: 19px ;
+    color: green;
+    letter-spacing: 1px ;
+    word-spacing: 1px ;
+    font-weight: 500;
+}
+
+.home p {
+
+    text-align: justify;
+    line-height: 25px ;
+    font-size: 14px ;
+    font-weight: 500;
+    letter-spacing: 0.5px ;
+    word-spacing: 1px ;
+
+}
+
+.home button {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 9px ;
+    outline: none;
+    text-transform: capitalize;
+    font-size: 14px ;
+    letter-spacing: 0.5px ;
+    cursor: pointer;
+    background-color: rgb(49, 48, 48);
+    color: white;
+    border-radius: 8px ;
+
+}
+
+.home button:hover {
+
+    background-color: rgb(29, 28, 28);
+}
+
+
+.about {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px ;
+    gap: 20px ;
+    text-align: justify;
+    height: 400px;
+}
+.about h4 {
+
+    font-size: 19px ;
+    text-transform: capitalize;
+    letter-spacing: 1px ;
+    color: blue;
+    text-decoration: underline;
+
+
+}
+
+.about p {
+
+    text-align: justify;
+    line-height: 25px ;
+    font-weight: 400;
+    letter-spacing: 0.5px ;
+    word-spacing: 1px ;
+    
+}
+
+
+.skills {
+
+    display: flex;
+    justify-content: center ;
+    align-items:center ;
+    text-align: center;
+    height: 400px ;
+    gap: 30px ;
+
+
+}
+
+
+p img {
+
+    width: 90px ;
+    background-color: transparent;
+}
+
+.skills h3 {
+
+    position: relative;
+    top: 0px ;
+    left: 0;
+    color: darkgray ;
+    font-size: 22px ;
+    text-transform: capitalize;
+    margin-right: 10px ;
+
+}
+
+
+.end {
+
+    text-align: center;
+    padding: 7px ;
+    background-color: black;
+    color: white;
+}
+
+.end p {
+
+    text-transform: capitalize;
+    font-size: 13px ;
+    letter-spacing: 1px ;
+    word-spacing: 1px ;
+    color: gray;
+    
+}
+
+.end p a {
+
+    font-size: 11px ;
+    letter-spacing: 1px ;
+    text-decoration: none;
+    color: darkcyan;
+
+}
+
+
+.cap {
+
+    text-transform: capitalize;
+    font-size: 17px ;
+    letter-spacing: 1px ;
+    font-weight: 500;
+}
+
+
+
+
+@media (max-width : 1200px ) {
+
+
+    .skills {
+
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .skills h3 {
+
+        display: none;
+    }
+
+    img
+    {
+
+        display: none;
+        
+    }
+    
+}
+
+.exit {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px ;
+  
+}
+.exit h3 {
+
+    text-transform: capitalize;
+    background-color: darkgray;
+    padding: 20px ;
+    border-radius: 8px ;
+}
+
+
+

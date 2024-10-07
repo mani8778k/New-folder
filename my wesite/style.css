@@ -1,0 +1,399 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: "Fredoka", sans-serif;
+}
+
+.top {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 10px ;
+    text-align: center;
+    background-color: darkgray ;
+}
+.top h3 {
+
+    text-transform: capitalize;
+    font-size: 20px ;
+    font-weight: 600;
+}
+
+.top button {
+
+    width: 30px ;
+    height: 20px;
+    text-align: center;
+    display: flex;
+    outline: none;
+    border: none;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.top button span {
+
+    width: 100%;
+    height: 3px ;
+    background-color: white ;
+    text-align: center;
+    border-radius: 6px ;
+}
+
+.head {
+
+    position: fixed;
+    top: 44px;
+    left: 0;
+    width: 300px ;
+    height: 100vh;
+    background-color: white ;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.head .image {
+
+    text-align: center;
+    padding: 10px;
+}
+
+.image img {
+
+    border-radius: 50%;
+    border: 2px solid rgb(123, 181, 123);
+    padding: 1px ;
+}
+
+.image h3 {
+
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 18px;
+    color:rgba(14, 33, 146, 0.784) ;
+    font-weight: 600;
+    padding: 7px;
+}
+
+
+.head .content {
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+
+}
+
+.content a {
+
+    padding: 13px;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: black;
+    cursor: pointer;
+    font-weight: 500;
+     
+}
+
+.content a:hover {
+
+    background-color: rgb(244, 238, 238);
+
+}
+
+.head .design {
+
+    text-align: center;
+    margin-top: 100px ;
+    font-size: 12px;
+    text-transform: capitalize;
+    letter-spacing: 1px ;
+    font-weight: 500 ;
+}
+
+.head .design a {
+    text-decoration: none;
+    color: rgb(7, 158, 158);
+}
+
+.over .head {
+
+    transform: translateX(-310px);
+    transition: 0.5s ease;
+}
+
+
+.active .head {
+
+    transform: translateX(0px );
+    transition: 0.5s ease;
+}
+
+
+.container {
+
+    position: relative;
+    padding: 10px ;
+
+}
+
+.container div {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+.container div:not(.active) {
+
+    display: none;
+}
+
+
+
+.container .home {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 500px ;
+    width: 500px ;
+    margin-left: 40%;
+    gap: 20px ;
+
+}
+
+
+.container .home h4 {
+
+    text-transform: uppercase ;
+    letter-spacing: 1px ;
+    font-size: 18px ;
+    font-weight: 600;
+
+}
+
+.home p {
+
+    text-align: center;
+    letter-spacing: 0.5px ;
+    word-spacing: 1px ;
+    line-height: 23px ;
+    color: rgb(34, 34, 34);
+    font-weight: 400;
+
+}  
+
+.home button {
+
+    padding: 8px 10px ;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 15px ;
+    border-radius: 4px ;
+    border: none;
+    background-color: rgb(46, 44, 44);
+    color: white;
+    width: 200px ;
+    letter-spacing: 1px ;
+}
+
+.home button:hover {
+
+    background-color: rgb(81, 78, 78);
+}
+
+.home button a {
+
+    text-decoration: none;
+    color: white;
+
+}
+
+
+.container .about {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px ;
+    height: 500px ;
+    justify-content: center;
+    align-items: center;
+    width: 500px ;
+    margin-left: 39%;
+}
+
+.about h3 {
+
+    text-transform: uppercase;
+    letter-spacing: 1px ;
+    font-size: 18px ;
+    color: navy;
+}
+
+.about p {
+
+    text-align: justify;
+    letter-spacing: 0.5px ;
+    word-spacing: 1px ;
+    line-height: 30px ;
+    font-size: 15x ;
+}
+
+
+.skills  {
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 500px ;
+    height: 500px ;
+    margin-left: 40%;
+    gap: 10px ;
+    padding: 20px ;
+    
+}
+
+
+
+.skills p img {
+
+    width: 100px ;
+    padding: 20px ;
+    border : 1px solid rgb(238, 236, 236) ;
+    box-shadow: 0px 0px 3px darkgray ;
+
+}
+
+.skills p .html {
+
+    width: 80px ;
+
+
+}
+
+
+.skills p .css {
+
+    width: 57px ;
+}
+
+
+
+.skills p .java {
+
+    width: 80px ;
+
+}
+
+
+.skills p .css-fram {
+
+    width: 62px ;
+
+}
+
+
+.skills p .python {
+
+    width: 80px ;
+    margin-right: 40px ;
+}
+
+.connect {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px ;
+    height: 500px ;
+    margin-left: 40%;
+    gap: 20px ;
+
+}
+
+.connect h3 {
+
+    text-transform: uppercase;
+    font-size: 19px ;
+    font-weight: 600;
+}
+
+.connect p {
+
+    text-align: justify;
+    line-height: 27px ;
+    font-size: 17px ;
+    font-weight: 400;
+}
+
+
+.sample {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px ;
+    text-transform: uppercase;
+    font-size: 21px ;
+    font-weight: 600;
+    color: navy;
+
+}
+
+.active .sample {
+
+    display: none;
+
+}
+
+
+@media (max-width : 600px ) {
+
+
+    body {
+
+        content: "please";
+    }
+
+    .container {
+
+        content: "please";
+    }
+
+    .container .active {
+
+        display: none;
+    }
+   
+    
+}
+
+
+
+.over:not(.active) .container .active {
+
+    display: none;
+}
+
+
+
+
+
+
